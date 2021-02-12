@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(pics/background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider1{
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  width: 285px;
+  box-shadow: 10px 10px 15px rgb(238, 190, 190);
+  border: 1px solid rgb(170, 170, 170);
+  
+}
+.slider2{
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 17%;
+  width: 285px;
+  box-shadow: 10px 10px 15px rgb(238, 190, 190);
+  border: 1px solid rgb(170, 170, 170);
+}
+.slider3{
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 30%;
+  width: 285px;
+  box-shadow: 10px 10px 15px rgb(238, 190, 190);
+  border: 1px solid rgb(170, 170, 170);
+}
+
+.slider4{
+  display: none;
+  width: 285px;
+  box-shadow: 10px 10px 15px rgb(238, 190, 190);
+  border: 1px solid rgb(170, 170, 170);
+}
+img{
+ width: auto;
+ height: 380px;
+ z-index: 2;
+}
+.heart img{
+  height: 120px;
+  width: auto;
+  animation: heart 5s linear infinite;
+  
+}
+.heart{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -120px;
+ }
+@keyframes heart{
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    
+    opacity: 1;
+  }
+  70% {
+   
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.heart img:nth-child(1){
+  animation-delay: 2s;
+}
+.heart img:nth-child(3){
+  animation-delay: 4s;
+}.heart img:nth-child(5){
+  animation-delay: 1s;
+}.heart img:nth-child(4){
+  animation-delay: 5s;
+}.heart img:nth-child(2){
+  animation-delay: 6s;
+}.heart img:nth-child(7){
+  animation-delay: 4s;
+}.heart img:nth-child(6){
+  animation-delay: 2s;
+}
+
+@media only screen and (max-width: 1200px){
+  .slider1,.slider2,.slider3{
+    display: none;
+  }
+  .slider4{
+    display: block;
+    margin: 0 auto;
+
+  }
+  .center{
+    padding-top: 10%;
+  }
+  
+   
+    
+
+
+
